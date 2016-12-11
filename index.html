@@ -8,45 +8,45 @@
 <body>
 	<main>
 		<article>
-			<section>
+			<header>
 				<h1>Git commands</h1>
 				<h2>Basic Snapshotting</h2>
-			</section>
+			</header>
 			<section>
 				<h3>git add</h3>
-				<p></p>
+				<p>The <strong>git add</strong> command adds content from the working directory into the staging area (or “index”) for the next commit. When the <strong>git commit</strong> command is run, by default it only looks at this staging area, so <strong>git add</strong> is used to craft what exactly you would like your next commit snapshot to look like.</p>
 			</section>
 			<section>
 				<h3>git status</h3>
-				<p></p>
+				<p>The <strong>git status</strong> command will show you the different states of files in your working directory and staging area. Which files are modified and unstaged and which are staged but not yet committed. In its normal form, it also will show you some basic hints on how to move files between these stages.</p>
 			</section>
 			<section>
 				<h3>git diff</h3>
-				<p></p>
+				<p>The <strong>git diff</strong> command is used when you want to see differences between any two trees. This could be the difference between your working environment and your staging area (<strong>git diff</strong> by itself), between your staging area and your last commit (<strong>git diff --staged</strong>), or between two commits (<strong>git diff master branchB</strong>).</p>
 			</section>
 			<section>
 				<h3>git difftool</h3>
-				<p></p>
+				<p>The <strong>git difftool</strong> command simply launches an external tool to show you the difference between two trees in case you want to use something other than the built in <strong>git diff</strong> command.</p>
 			</section>
 			<section>
 				<h3>git commit</h3>
-				<p></p>
+				<p>The <strong>git commit</strong> command takes all the file contents that have been staged with <strong>git add</strong> and records a new permanent snapshot in the database and then moves the branch pointer on the current branch up to it.</p>
 			</section>
 			<section>
 				<h3>git reset</h3>
-				<p></p>
+				<p>The <strong>git reset</strong> command is primarily used to undo things, as you can possibly tell by the verb. It moves around the <strong>HEAD</strong> pointer and optionally changes the <strong>index</strong> or staging area and can also optionally change the working directory if you use <strong>--hard</strong>. This final option makes it possible for this command to lose your work if used incorrectly, so make sure you understand it before using it.</p>
 			</section>
 			<section>
 				<h3>git rm</h3>
-				<p></p>
+				<p>The <strong>git rm</strong> command is used to remove files from the staging area and working directory for Git. It is similar to <strong>git add</strong> in that it stages a removal of a file for the next commit. We cover the <strong>git rm</strong> command in some detail in Removing Files, including recursively removing files and only removing files from the staging area but leaving them in the working directory with <strong>--cached</strong>.</p>
 			</section>
 			<section>
 				<h3>git mv</h3>
-				<p></p>
+				<p>The <strong>git mv</strong> command is a thin convenience command to move a file and then run <strong>git add</strong> on the new file and <strong>git rm</strong> on the old file.</p>
 			</section>
 			<section>
 				<h3>git clean</h3>
-				<p></p>
+				<p>The <strong>git clean</strong> command is used to remove unwanted files from your working directory. This could include removing temporary build artifacts or merge conflict files.</p>
 			</section>
 		</article>
 	</main>

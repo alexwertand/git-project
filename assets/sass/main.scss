@@ -1,0 +1,60 @@
+@import "normalize/import-now";
+
+@font-face {
+  font-family: 'Trench';
+  src: url('Trench.eot');
+  src: url('Trench.eot?#iefix') format('embedded-opentype'),
+       url('Trench.woff2') format('woff2'),
+       url('Trench.woff') format('woff'),
+       url('Trench.ttf')  format('truetype'),
+       url('Trench.svg#svgFontName') format('svg');
+}
+
+body {
+	font: normal 100% Trench, "Lucida Grande", "Tahoma", "Verdana", "Arial", sans-serif;
+	background-color: #269;
+	background-image: linear-gradient(white 2px, transparent 2px),
+	linear-gradient(90deg, white 2px, transparent 2px),
+	linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+	linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+	background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+main {
+	width: 70%;
+	margin: 0 auto;
+	padding: 0.1%;
+	text-align: center;
+	background: whitesmoke;
+}
+
+h1 {
+	font-size: 300%;
+	line-height: 120%;
+	color: red;
+}
+
+h2 {
+	font-size: 150%;
+	line-height: 100%;
+	color: orangered;
+}
+
+h3 {
+	display: inline-block;
+	font-size: 120%;
+	line-height: 100%;
+	color: blue;
+	margin-bottom: 0;
+	padding-bottom: 1.5%;
+	border-bottom: 1px solid red;
+}
+
+section {
+	margin: 0 1.5% 2.5%;
+	padding: 1%;
+	background: white;
+	box-shadow: 0 1px 1px black;
+  outline: 1px solid white;
+}
